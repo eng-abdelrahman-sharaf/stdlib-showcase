@@ -8,6 +8,11 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
+    "@stdlib/array": "^0.3.3",
+    "@stdlib/array-float64": "^0.2.3",
+    "@stdlib/plot": "^0.3.3",
+    "@stdlib/stats": "^0.3.3",
+    "@stdlib/stats-base-stdev": "^0.2.2",
     "@stdlib/stdlib": "^0.3.2",
     "@tailwindcss/postcss": "^4.2.1",
     "class-variance-authority": "^0.7.1",
