@@ -24,6 +24,6 @@ export const getHistoricalRates = async (
     rates: Object.entries(data.rates).map(([date, rate]) => ({
       date,
       rate: rate[toCurrency],
-    })) as { date: string; rate: number }[],
+    })) as HistoricalData,
   };
 };
