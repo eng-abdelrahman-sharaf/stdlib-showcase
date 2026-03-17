@@ -177,3 +177,5 @@ jsconfig.json
 ################
 *.sublime-workspace
 *.sublime-project
+
+.next
