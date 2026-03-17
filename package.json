@@ -1,6 +1,16 @@
 {
-    "private": true,
-    "dependencies": {
-        "@stdlib/stdlib": "^0.3.2"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "@stdlib/stdlib": "^0.3.2",
+    "next": "^16.1.7",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
 }
