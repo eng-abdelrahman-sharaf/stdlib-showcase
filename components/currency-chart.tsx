@@ -22,7 +22,7 @@ import {
   getMonthlyAverages,
   getStandardDeviation,
 } from "@/lib/utils";
-import { Currency, HistoricalData } from "@/app/types";
+import { Currency, HistoricalData } from "@/lib/types";
 
 export function CurrencyChart({
   data,

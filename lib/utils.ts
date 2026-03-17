@@ -1,7 +1,7 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { max, mean, stdev } from "@stdlib/stats/base";
-import { HistoricalData } from "@/app/types";
+import { HistoricalData } from "@/lib/types";
 
 export const getMeanRate = (data: HistoricalData) => {
   const rates = data.map((d) => d.rate);
