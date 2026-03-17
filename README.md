@@ -62,8 +62,8 @@ yarn dev
 bun run dev
 ```
 
-## stdlib packages used
+## stdlib functions used
 
 - `@stdlib/stats-base-mean`
 - `@stdlib/stats-base-variance`
-- `@stdlib/stats-base-stdev`
+- `@stdlib/stats-base-max`
