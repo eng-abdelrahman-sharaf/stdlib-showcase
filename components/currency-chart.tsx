@@ -35,7 +35,7 @@ export function CurrencyChart({
 }) {
   const monthRates = getMonthlyAverages(data);
   return (
-    <Card className="w-fit">
+    <Card className="w-full max-w-[700px]">
       <CardHeader>
         <CardTitle>
           {" "}
@@ -44,7 +44,7 @@ export function CurrencyChart({
         <CardDescription>Showing monthly averages</CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={{}} className="min-h-[500px] max-w-[700px]">
+        <ChartContainer config={{}} className="min-h-[500px] w-full">
           <AreaChart
             accessibilityLayer
             data={monthRates}
@@ -75,12 +75,10 @@ export function CurrencyChart({
           </AreaChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter>
-        <div className="flex wrap gap-4">
-          <div>Mean: {getMeanRate(data).toFixed(2)}</div>
-          <div>Standard Deviation: {getStandardDeviation(data).toFixed(2)}</div>
-          <div>Peak: {getMaxRate(data).toFixed(2)}</div>
-        </div>
+      <CardFooter className="flex-wrap gap-4 justify-center">
+        <div>Mean: {getMeanRate(data).toFixed(2)}</div>
+        <div>Standard Deviation: {getStandardDeviation(data).toFixed(2)}</div>
+        <div>Peak: {getMaxRate(data).toFixed(2)}</div>
       </CardFooter>
     </Card>
   );
